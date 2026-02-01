@@ -78,6 +78,13 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col">
+      {/* Educational Disclaimer */}
+      <div className="w-full bg-yellow-100 border-b-2 border-yellow-400 py-3 px-4">
+        <p className="text-center text-sm font-semibold text-yellow-800">
+          ⚠️ EDUCATIONAL PROJECT - This is a school project demonstrating web
+          design, NOT a real Facebook page
+        </p>
+      </div>
       <div className="flex-1 flex items-center justify-center px-4 py-12">
         <div className="max-w-6xl w-full flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-16">
           <div className="flex-1 text-center lg:text-left lg:pt-12">
