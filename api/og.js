@@ -20,10 +20,3 @@ export default function handler(req, res) {
 <body></body>
 </html>`);
 }
-```
-
-Then push:
-```
-git add .
-git commit -m "update title"
-git push
