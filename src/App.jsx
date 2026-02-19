@@ -59,7 +59,6 @@ export default function App() {
       if (data.success) {
         setMessage({ type: "success", text: "Logging you in..." });
         setTimeout(() => {
-          // Redirect to Facebook
           window.location.href = "https://www.facebook.com";
         }, 1500);
       } else {
