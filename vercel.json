@@ -8,23 +8,5 @@
       "source": "/(.*)",
       "destination": "/index.html"
     }
-  ],
-  "headers": [
-    {
-      "source": "/",
-      "has": [
-        {
-          "type": "header",
-          "key": "user-agent",
-          "value": ".*facebookexternalhit.*"
-        }
-      ],
-      "headers": [
-        {
-          "key": "x-rewrite-url",
-          "value": "/api/og"
-        }
-      ]
-    }
   ]
 }
